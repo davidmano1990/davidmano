@@ -1,0 +1,14 @@
+appName: my-java-app
+
+configmap:
+  name: my-java-app-configmap-v1
+  data:
+    CUSTOM_HEADER: 'This app was deployed with helm!'
+
+image:
+  name: davidhtcmail/banner-java
+  tag: v3
+
+service:
+  type: NodePort
+  port: 80
