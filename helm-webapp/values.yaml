@@ -7,8 +7,8 @@ configmap:
 
 image:
   name: davidhtcmail/banner-java
-  tag: 3
+  tag: v3
 
 service:
   type: NodePort
-  port: 80
+  port: 8081
